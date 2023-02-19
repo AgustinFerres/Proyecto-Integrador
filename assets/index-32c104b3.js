@@ -374,6 +374,7 @@ Error generating stack: `+a.message+`
     justify-content: space-between;
     flex-direction: column;
     gap: 15px;
+    width: 100%;
     & :first-child {
         margin-bottom: 5px;
     }
@@ -1414,7 +1415,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     font-weight: bold;
 `,V0=[{src:"/img/social/facebook.svg",key:"facebook",alt:"facebook logo",path:"https://www.facebook.com",target:"_blank",icon:"fab fa-facebook"},{src:"/img/social/linkedin.svg",key:"linkedin",alt:"linkedin logo",path:"https:/www.linkedin.com",target:"_blank",icon:"fab fa-linkedin"},{src:"/img/social/twitter.svg",key:"twitter",alt:"twitter logo",path:"https:/www.twitter.com",target:"_blank",icon:"fab fa-twitter"},{src:"/img/social/instagram.svg",key:"instagram",alt:"instagram logo",path:"https:/www.instagram.com",target:"_blank",icon:"fab fa-instagram"}],Ek=()=>X(xk,{children:[P(Ck,{color:"white",children:"©2021 Digital Booking"}),P(Sk,{children:V0.map(e=>P(z0,{target:e.target,href:e.path,children:P(zt,{fontSize:"24px",icon:e.icon})},e.key))})]}),j0=[{type:"hidden",key:"home",label:"Home",path:"/",element:P(pk,{})},{type:"route",key:"register",label:"Crear cuenta",path:"/register",element:P(bk,{})},{type:"route",key:"login",label:"Iniciar sesión",path:"/login",element:P(hk,{})},{type:"hidden",key:"notfound",label:"",path:"*",element:P("div",{children:"Not found"})}],kk=z.img`
     height: 50px;
-`,Pk="/logo.svg",Ok=()=>P(kk,{src:Pk}),Ak=z.header`
+`,Pk="./logo.svg",Ok=()=>P(kk,{src:Pk}),Ak=z.header`
     background-color: white;
     padding: 20px;
     display: flex;
