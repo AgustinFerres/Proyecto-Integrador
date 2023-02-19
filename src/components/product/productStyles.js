@@ -38,6 +38,7 @@ export const ProductDescription = styled.div`
     justify-content: space-between;
     flex-direction: column;
     gap: 15px;
+    width: 100%;
     & :first-child {
         margin-bottom: 5px;
     }

@@ -10,7 +10,7 @@ import LoggedUser from './LoggedUser'
 const Navbar = () => {
     return (
         <NavbarContainer>
-            <Link to={routes[0].path}>
+            <Link to={'/'}>
                 <Logo />
             </Link>
 

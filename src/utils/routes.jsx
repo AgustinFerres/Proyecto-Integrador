@@ -7,21 +7,21 @@ export const routes = [
         "type": "hidden",
         "key": "home",
         "label": "Home",
-        "path": "/Proyecto-Integrador/",
+        "path": "/",
         "element": <HomePage />
     },
     {   
         "type": "route",
         "key": "register",
         "label": "Crear cuenta",
-        "path": "/Proyecto-Integrador/register",
+        "path": "/register",
         "element": <RegisterPage />
     },
     {   
         "type": "route",
         "key": "login",
         "label": "Iniciar sesión",
-        "path": "/Proyecto-Integrador/login",
+        "path": "/login",
         "element": <LoginPage />
     },
     {   
