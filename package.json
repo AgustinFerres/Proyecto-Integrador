@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://agustinferres.github.io/Proyecto-Integrador",
+  "homepage": "https://agustinferres.github.io/proyecto-integrador",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
