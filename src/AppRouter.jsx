@@ -11,7 +11,7 @@ function AppRouter() {
   let proxy = ""
   //   proxy = "http://127.0.0.1:8080"
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/Proyecto-Integrador'>
         <Routes>
             <Route element={<Layout />}>
                 {routes.map(route => 
