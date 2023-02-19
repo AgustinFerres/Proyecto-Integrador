@@ -36,5 +36,27 @@ export const UserContainer = styled.div`
         color: white;
         font-weight: bold;
     }
+    & > :last-child {
+        position: relative;
+        & > svg {
+            position: absolute;
+            top: -10px;
+            right: 5px;
+            &:active {
+                animation: 1s press;
+            }
+            @keyframes press {
+                0%{
+                    transform: scale(0.9);
+                }
+                50%{
+                    transform: scale(1.1);
+                }
+                100%{
+                    transform: scale(1);
+                }
+            }
+        }
+    }
 
 `

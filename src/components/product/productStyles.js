@@ -150,11 +150,111 @@ export const Star = styled.i`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     ` : filled === 'full' ? css`
-        color: ${primaryColor}
+        color: ${primaryColor};
     ` : css`
-        color: ${color2}
+        color: ${color2};
     `
 }
     
+
+`
+
+export const SkeletonCard = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: -1;
+
+    @media (min-width: ${breakpoints.tablet}) {
+        flex-direction: row;
+    }
+    & > :first-child {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        aspect-ratio: 16/10;
+        background-image: linear-gradient(
+            90deg,
+            ${color4} 0px,
+            #efefef 30px,
+            ${color4}  60px
+        );
+        width: 100%;
+
+        animation: 2s infinite move ease-in-out;
+
+
+        @keyframes move {
+            from {
+                background-position: 0px 0px;
+            }
+            to {
+                background-position: 91.5vw 0px; 
+            }
+        }
+
+        @media (min-width: ${breakpoints.tablet}) {
+            border-radius: 10px;
+            aspect-ratio: 1/.5;
+            object-fit: cover;
+
+            @keyframes move {
+                from {
+                    background-position: 0px 0px;
+                }
+                to {
+                    background-position: 44vw 0px; 
+                }
+            }
+        }
+        
+        @media (min-width: ${breakpoints.desktop}) {
+                @keyframes move {
+                from {
+                    background-position: 0px 0px;
+                }
+                to {
+                    background-position: 22.5vw 0px; 
+                }
+            }
+        }
+    }
+    & > div:last-of-type {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+        width: 100%;
+        height: 100%;
+
+        & > div {
+            width: 100%;
+            height: 30%;
+            background-image: linear-gradient(
+                90deg,
+                ${color4} 0px,
+                #efefef 30px,
+                ${color4}  60px
+            );
+            animation: 2s infinite move ease-in-out;
+    
+        }
+
+        & > p {
+            width: 100%;
+            height: 15%;
+            background-image: linear-gradient(
+                90deg,
+                ${color4} 0px,
+                #efefef 30px,
+                ${color4}  60px
+            );
+            animation: 2s infinite move ease-in-out;
+        }
+
+        & > p:last-of-type {
+            height: 50%;
+        }
+    }
+
 
 `
