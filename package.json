@@ -1,0 +1,35 @@
+{
+  "name": "digital-booking",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "homepage": "https://agustinferres.github.io/Proyecto-Integrador",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.3.0",
+    "@fortawesome/free-brands-svg-icons": "^6.3.0",
+    "@fortawesome/free-regular-svg-icons": "^6.3.0",
+    "@fortawesome/free-solid-svg-icons": "^6.3.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "dayjs": "^1.11.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.43.1",
+    "react-router-dom": "^6.8.1",
+    "react-select": "^5.7.0",
+    "styled-components": "^5.3.6"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^3.1.0",
+    "gh-pages": "^5.0.0",
+    "vite": "^4.1.0"
+  }
+}
