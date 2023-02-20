@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "title": "Toyota",
+        "description": "12.538 autos",
+        "img": "https://toyotaassets.scene7.com/is/image/toyota/Prius_68x538_TYCK2067000H?fmt=jpeg&fit=crop&wid=767"
+    },
+    {
+        "id": 2,
+        "title": "Renault",
+        "description": "5.230 autos",
+        "img": "https://cdn.motor1.com/images/mgl/Y1B1q/s1/adios-al-kwid-por-restricciones-a-las-importaciones-renault-deja-de-vender-su-auto-mas-barato-en-argentina.webp"
+    }
+]

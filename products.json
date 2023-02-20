@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "img":"https://cdn-3.expansion.mx/4f/1e/414b662d4ced8dca9d5ed05f515e/800-2022-priusplug-inhybrid8-3.jpg",
+        "category": "Toyota",
+        "title":"Prius",
+        "location": "Montevideo",
+        "description":"El Toyota Prius (トヨタ·プリウス Toyota Puriusu) es un automóvil híbrido gasolina-eléctrico del segmento C producido por el fabricante de automóviles japonés Toyota que se ha convertido en el más visible representante de los vehículos híbridos.",
+        "rating": 3.7,
+        "liked": false
+    },
+    {
+        "id": 2,
+        "img":"https://upload.wikimedia.org/wikipedia/commons/7/77/2023_Renault_Kwid_Iconic_%28Colombia%29_front_view_01.png",
+        "category": "Renault",
+        "title":"Kwid",
+        "location": "Montevideo",
+        "description":"El Renault Kwid es un automóvil de turismo del segmento A, producido por el fabricante francés Renault en alianza con Nissan tanto en su planta de Chennai, India como en la de São José dos Pinhais, Brasil. Lanzado como prototipo en el salón del automóvil de Nueva Delhi en 2014 y anunciándose para su producción en mayo de 2015.",
+        "rating": 3.7,
+        "liked": false
+    }
+]
