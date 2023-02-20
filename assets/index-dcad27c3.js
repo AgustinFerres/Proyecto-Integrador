@@ -195,7 +195,9 @@ Error generating stack: `+o.message+`
         /* font-size: 1rem; */
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         /* border-radius: 5px; */
+        -webkit-appearance: none;
         box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+        -webkit-appearance: none;
         &:focus {
             outline: none;
         }
