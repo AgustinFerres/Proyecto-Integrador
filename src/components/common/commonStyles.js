@@ -31,6 +31,7 @@ export const handleColor = color => {
 const textColorStyle = css`
     color: ${({ color }) => color ? handleColor(color) : handleColor(color2)};
     text-align: ${({ align }) => align ? align : "left"};
+    margin: ${({ margin }) => margin ? margin : "0"};
 `
 
 export const Heading1 = styled.h1`
@@ -171,7 +172,7 @@ export const InputContainer = styled.div`
         /* height: 70%; */
         /* padding: 5px 20px; */
         /* font-size: 1rem; */
-        /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
         /* border-radius: 5px; */
         box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
         &:focus {
@@ -222,9 +223,14 @@ export const SubmitContainer = styled.div`
 
 `
 export const Card = styled.article`
+    background-color: white;
+    
     border-radius: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     position: relative;
+
+    display: flex;
+    flex-direction: column;
 `
 
 export const FooterSpace = styled.div`

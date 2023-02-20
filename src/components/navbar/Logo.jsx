@@ -5,7 +5,7 @@ const LogoImage = styled.img`
     height: 50px;
 `
 
-const path = "./logo.svg"
+const path = "/logo.svg"
 
 const Logo = () => {
   return <LogoImage src={path} />

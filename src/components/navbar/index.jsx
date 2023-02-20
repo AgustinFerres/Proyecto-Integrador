@@ -3,16 +3,17 @@ import { Link } from 'react-router-dom'
 import { routes } from '../../utils/routes'
 import { FilledButton, OutlinedButton } from '../common/commonStyles'
 import Logo from './Logo'
-import { LinksContainer, NavbarContainer } from './Navbar.styles'
+import { LinksContainer, LogoLink, LogoText, NavbarContainer } from './Navbar.styles'
 import Menu from './menu'
 import LoggedUser from './LoggedUser'
 
 const Navbar = () => {
     return (
         <NavbarContainer>
-            <Link to={'/'}>
+            <LogoLink to={routes[0].path}>
                 <Logo />
-            </Link>
+                <LogoText>Sentite como en tu hogar</LogoText>
+            </LogoLink>
 
             <Menu />
             <LinksContainer>

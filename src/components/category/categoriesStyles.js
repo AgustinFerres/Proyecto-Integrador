@@ -35,7 +35,7 @@ export const CategoryImage = styled.img`
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
     width: 100%;
-    aspect-ratio: 16/9;
+    aspect-ratio: 16/11;
     object-fit: cover;  
 `
 

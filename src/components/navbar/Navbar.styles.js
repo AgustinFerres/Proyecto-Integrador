@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
 import breakpoints from '../common/breakpoints';
-import { buttonSharedStyle, primaryColor } from '../common/commonStyles';
+import { Text1, buttonSharedStyle, primaryColor } from '../common/commonStyles';
+import { Link } from 'react-router-dom';
 
 export const NavbarContainer = styled.header`
     background-color: white;
@@ -59,4 +60,22 @@ export const UserContainer = styled.div`
         }
     }
 
+`
+
+export const LogoText = styled(Text1)`
+    display: none;
+    font-weight: 300;
+    font-size: 18px;
+
+    @media (min-width: ${breakpoints.desktop}) {
+        display: inline-block;
+    }
+`
+
+export const LogoLink = styled(Link)`
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    text-decoration: none;
+    
 `

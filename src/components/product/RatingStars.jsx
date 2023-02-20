@@ -1,16 +1,25 @@
 import React, { useState } from 'react'
 import { Star } from './productStyles';
 
-const RatingStars = ({rating ,setRating}) => {
+const RatingStars = ({ rating }) => {
+
+    const stars = [];
+
+    for(let i = 1; i <= 5; i++) {
+        let percentage = 0;
+        if (rating >= i) {
+            percentage = 1;
+        } else if (rating > (i - 1)) {
+            percentage = rating % 1;
+        }
+        stars.push({percentage, i})
+    }
 
 
     return (
+
         <span>
-            <Star filled={rating >= 1 ? 'full': ''} onClick={() => setRating(1)}>★</Star>
-            <Star filled={rating === 1.5  ? 'half' : rating >= 2 ? 'full' : ''} onClick={() => setRating(2)}>★</Star>
-            <Star filled={rating === 2.5  ? 'half' : rating >= 3 ? 'full' : ''} onClick={() => setRating(3)}>★</Star>
-            <Star filled={rating === 3.5  ? 'half' : rating >= 4 ? 'full' : ''} onClick={() => setRating(4)}>★</Star>
-            <Star filled={rating === 4.5  ? 'half' : rating === 5 ? 'full' : ''} onClick={() => setRating(5)}>★</Star>
+            {stars.map(star =><Star key={star.i} percentage={star.percentage} >★</Star>)}
         </span>
     )
 }
