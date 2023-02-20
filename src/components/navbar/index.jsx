@@ -10,7 +10,7 @@ import LoggedUser from './LoggedUser'
 const Navbar = () => {
     return (
         <NavbarContainer>
-            <LogoLink to={'/'}>
+            <LogoLink to={'/ '}>
                 <Logo />
                 <LogoText>Sentite como en tu hogar</LogoText>
             </LogoLink>
