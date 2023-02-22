@@ -14,7 +14,7 @@ const Login = () => {
     if (e.target[0].value === 'prueba@gmail.com' && e.target[1].value === '123456'){
 
       localStorage.setItem('user', 'Brian Rodríguez')
-      location.replace('/')
+      location.replace('/Proyecto-Integrador/')
     }
   }
   return (
