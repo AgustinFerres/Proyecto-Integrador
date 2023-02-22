@@ -1,13 +1,13 @@
 import React from 'react'
-import { CategoriesContainer, SkeletonCard } from './categoriesStyles'
-import { Heading2, HomeSection, HomeTitle } from '../common/commonStyles'
+import { CategoriesContainer, } from './categoriesStyles'
+import { HomeSection, HomeTitle, color2 } from '../common/commonStyles'
 import CategoryCard from './CategoryCard'
 import SkeletonCategory from './SkeletonCategory'
 
 const Categories = ({ categories }) => {
     return (
-        <HomeSection>
-            <HomeTitle>Buscá por marca</HomeTitle>
+        <HomeSection color='white'>
+            <HomeTitle color={color2}>Buscá por marca</HomeTitle>
             <CategoriesContainer>
                 {
                     categories ? categories.map(category => <CategoryCard key={ category.id } img={ category.img } title={ category.title } description={ category.description } />)

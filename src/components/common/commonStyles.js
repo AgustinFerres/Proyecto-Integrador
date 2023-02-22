@@ -59,8 +59,14 @@ export const Heading4 = styled.h4`
 `
 
 export const HomeTitle = styled.h2`
+
     font-size: 24px;
     margin: 10px 0;
+    color: ${({ color }) => color ? handleColor(color) : handleColor('white')};
+    @media (min-width: ${breakpoints.tablet}) {
+        color: ${({ color }) => color ? handleColor(color) : handleColor(color2)};
+    }
+
 `
 
 export const Text1 = styled.p`
@@ -235,9 +241,12 @@ export const FooterSpace = styled.div`
 `
 
 export const HomeSection = styled.section`
-    background: ${({ color }) => color ? handleColor(color) : handleColor('white')};
+    background: ${({ color }) => color ? handleColor(color) : handleColor(color2)};
     padding: 10px 15px;
     @media (min-width: ${breakpoints.tablet}) {
         padding: 10px 40px;
+        background: ${({ color }) => color ? handleColor(color) : handleColor(transparent2_1)};
     }
 `
+
+

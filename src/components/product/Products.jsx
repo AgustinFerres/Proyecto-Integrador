@@ -6,7 +6,7 @@ import SkeletonProduct from './SkeletonProduct'
 
 const Products = ({ products }) => {
   return (
-    <HomeSection color="transparent2-1">
+    <HomeSection>
         <HomeTitle>Recomendaciones</HomeTitle>
         <ProductContainer>
 

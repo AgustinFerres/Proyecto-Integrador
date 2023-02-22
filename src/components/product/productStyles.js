@@ -121,10 +121,13 @@ export const HeartButton = styled(Button2)`
     }
 
     @keyframes click {
-        from {
+        0%{
             transform: scale(0.9);
         }
-        to {
+        50%{
+            transform: scale(1.1);
+        }
+        100%{
             transform: scale(1);
         }
     }

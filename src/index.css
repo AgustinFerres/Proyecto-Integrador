@@ -10,3 +10,7 @@ body, input, textarea, button {
     padding: 0;
     box-sizing: border-box;
 }
+
+.no-scroll {
+    overflow: hidden;
+}

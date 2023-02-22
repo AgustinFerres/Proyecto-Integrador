@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Hamburguer from './Hamburguer';
-import { MenuContainer } from './Menu.styles';
+import { MenuContainer, MenuOverlay } from './Menu.styles';
 import MenuHeader from './MenuHeader';
 import MenuFooter from './MenuFooter';
 import MenuBody from './MenuBody';
@@ -18,6 +18,7 @@ const Menu = () => {
                 <MenuBody onClick={() => handleExpanded(false)} />
                 <MenuFooter />
             </MenuContainer>
+            <MenuOverlay expanded={expanded} />
         </>
     )
 }

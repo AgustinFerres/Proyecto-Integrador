@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components"
-import { Button2, Heading2, buttonSharedStyle, primaryColor } from "../../common/commonStyles"
+import { Button2, Heading2, buttonSharedStyle, primaryColor, color2 } from "../../common/commonStyles"
 import breakpoints from "../../common/breakpoints"
 
 export const HamburguerButton = styled.button`
@@ -10,20 +10,36 @@ export const HamburguerButton = styled.button`
         display: none;
     }
 `
+export const MenuOverlay = styled.div`
+    pointer-events: none;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color:black;
+    opacity: 0;
+    z-index: 9;
+    transition: opacity 0.2s ease-out;
+    ${ props => props.expanded && css`
+        opacity: 0.5;
+    `};
+`
+
 
 export const MenuContainer = styled.div`
     position: fixed;
-    width: 100%;
+    width: 75%;
     height: 100%;
     right: 0px;
     top: 0px;
-    transform: translateY(-100%);
+    transform: translateX(100%);
     opacity: 0.2;
     transition: transform 0.2s ease-out, opacity 0.2s ease-out;
     background: white;
     z-index: 10;
     ${ props => props.expanded && css`
-        transform: translateY(0);
+        transform: translateX(0);
         opacity: 1;
     `};
 `
@@ -52,11 +68,30 @@ export const CloseButton = styled.button`
 
 export const MenuFooterContainer = styled.footer`
     position: absolute;
-    display: flex;
     bottom: 0;
     right: 0;
-    gap: 16px;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    & > p {
+            position: absolute;
+            right: 25px;
+            top: -20px;
+            font-weight: bold;
+            font-size: 12px;
+            color: ${color2};
+        }
+    & > hr {
+        position: relative;
+        align-self: center;
+        width: 90%;
+    }
+    & > :last-child {
+        display: flex;
+        justify-content: flex-end;
+        gap: 16px;
+        padding: 20px;
+    }
 `
 
 export const MenuBodyContainer = styled.section`
