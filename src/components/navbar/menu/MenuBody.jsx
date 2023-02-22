@@ -2,17 +2,15 @@ import React from 'react'
 import { MenuBodyContainer, MenuButton } from './Menu.styles'
 import { Separator } from '../../common/commonStyles'
 import { Link } from 'react-router-dom'
+import MapRoutes from '../MapRoutes'
+import LoggedUser from '../LoggedUser'
 
 const MenuBody = ({ onClick }) => {
   return (
     <MenuBodyContainer>
-        <Link onClick={ onClick } to={'/register'}>
-            <MenuButton>Crear cuenta</MenuButton>
-        </Link>
-        <Separator />
-        <Link onClick={ onClick } to={'/login'}>    
-            <MenuButton>Iniciar sesión</MenuButton> 
-        </Link>
+        { !localStorage.getItem('user') && 
+            <MapRoutes onClick={ onClick } type="menuButton" />
+        }
     </MenuBodyContainer>
   )
 }

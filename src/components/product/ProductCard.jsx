@@ -26,7 +26,6 @@ const ProductCard = ({ productData }) => {
         <DoubleCard>
             <ImageContainer>
                 <ProductImage src={ product.img } alt={ product.alt } />
-                {/* <Heart like={ product.liked } onClick={() => {dispatch({type: "like"})}}/> */}
                 <HeartButton like={ product.liked } onClick={() => {dispatch({type: "like"})}}><FontAwesomeIcon fontSize={'32px'} icon="fa-solid fa-heart" /></HeartButton>
             </ImageContainer>
             <ProductDescription>

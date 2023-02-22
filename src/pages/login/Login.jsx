@@ -18,7 +18,6 @@ const Login = () => {
     }
   }
   return (
-    
     <Form noValidate onSubmit={handleSubmit}>
       <Heading1 align='center' color='primary'>
         Iniciar sesión

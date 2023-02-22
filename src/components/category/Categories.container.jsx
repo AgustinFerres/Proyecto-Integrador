@@ -7,9 +7,13 @@ const CategoriesContainer = () => {
     const [categories, setCategories] = useState();
 
     useEffect(() => {
-        axios.get('categories.json')
+        axios.get('http://localhost:8080/category')
         .then(res => setCategories(res.data))
-        .catch(err => console.log(err))
+        .catch(err => {
+            axios.get('categories.json')
+            .then(res => setCategories(res.data))
+            .catch(err => console.log(err))
+        })
     },[])
 
     return <Categories categories={categories} />

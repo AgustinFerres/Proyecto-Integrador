@@ -136,7 +136,7 @@ export const Button = styled.button`
 `
 export const Form = styled.form`
     display: flex;
-    padding: 32px 64px;
+    padding: 30px 50px;
     flex-direction: column;
     gap: 15px;
     justify-content: center;
@@ -145,7 +145,7 @@ export const Form = styled.form`
     min-height: calc(100vh - 94px - 58px);
 
     @media (min-width: ${breakpoints.tablet}) {
-        width: 448px;
+        width: 500px;
         margin: 0 auto;
     }
 
@@ -169,11 +169,6 @@ export const InputContainer = styled.div`
         border: ${({wrong}) => wrong ? '1px solid red' : 'none'};
         background-color: ${({wrong}) => wrong ? 'rgba(255,0,0,0.15)' : 'none'};
         width: 100%;
-        /* height: 70%; */
-        /* padding: 5px 20px; */
-        /* font-size: 1rem; */
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        /* border-radius: 5px; */
         -webkit-appearance: none;
         box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
         -webkit-appearance: none;

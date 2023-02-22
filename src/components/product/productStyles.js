@@ -115,6 +115,22 @@ export const HeartButton = styled(Button2)`
     position: absolute; 
     top: 15px;
     right: 15px;
+
+    &:active {
+        animation: .25s click;
+    }
+
+    @keyframes click {
+        0%{
+            transform: scale(0.9);
+        }
+        50%{
+            transform: scale(1.1);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
 `
 
 

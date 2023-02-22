@@ -64,6 +64,10 @@ export const MenuBodyContainer = styled.section`
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
+    & > hr:last-of-type {
+        display: none;
+    }
 `
 
 export const MenuButton = styled(Button2)`

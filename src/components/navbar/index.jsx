@@ -6,25 +6,30 @@ import Logo from './Logo'
 import { LinksContainer, LogoLink, LogoText, NavbarContainer } from './Navbar.styles'
 import Menu from './menu'
 import LoggedUser from './LoggedUser'
+import MapRoutes from './MapRoutes'
 
 const Navbar = () => {
+
     return (
         <NavbarContainer>
-            <LogoLink to={'/ '}>
+            <LogoLink to={routes[0].path}>
                 <Logo />
                 <LogoText>Sentite como en tu hogar</LogoText>
             </LogoLink>
 
             <Menu />
             <LinksContainer>
-                {localStorage.getItem('user') ? <LoggedUser user={localStorage.getItem('user').toString()}/> :
-                
-                
-                routes.map(route => route.type != "hidden" ?
-                    <Link key={route.key} to={route.path}>
-                        <OutlinedButton>{route.label}</OutlinedButton>
-                    </Link>
-                    : "")}
+                { localStorage.getItem('user') ? 
+                <LoggedUser user={localStorage.getItem('user').toString()}/> 
+                :
+                <MapRoutes type="outlinedButton" />
+                }
+
+                {/* // routes.map(route => route.type != "hidden" && route.path != location.pathname ?
+                //     <Link key={route.key} to={route.path}>
+                //         <OutlinedButton>{route.label}</OutlinedButton>
+                //     </Link>
+                //     : "")} */}
             </LinksContainer>
         </NavbarContainer>
     )

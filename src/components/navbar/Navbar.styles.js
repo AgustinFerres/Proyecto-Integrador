@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 import breakpoints from '../common/breakpoints';
-import { Text1, buttonSharedStyle, primaryColor } from '../common/commonStyles';
+import { Heading4, Strong, Text1, buttonSharedStyle, color2, color3, primaryColor } from '../common/commonStyles';
 import { Link } from 'react-router-dom';
 
 export const NavbarContainer = styled.header`
@@ -26,20 +26,36 @@ export const LinksContainer = styled.div`
 
 export const UserContainer = styled.div`
 
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
     display: flex;
+    flex-direction: column;
     gap: 10px;
-    align-items: center;
+    align-items: flex-end;
+
+    @media (min-width: ${breakpoints.tablet}) {
+        position: static;
+        flex-direction: row;
+        align-items: center;
+    }
 
     & > :first-child {
-        background-color: ${primaryColor};
+        background-color: white;
         padding: 10px;
         border-radius: 50%;
-        color: white;
+        color: ${color3
+        };
         font-weight: bold;
+        @media (min-width: ${breakpoints.tablet}) {
+            background-color: ${primaryColor};
+            color: white;
+        }
     }
     & > :last-child {
         position: relative;
         & > svg {
+            display: none;
             position: absolute;
             top: -10px;
             right: 5px;
@@ -57,9 +73,28 @@ export const UserContainer = styled.div`
                     transform: scale(1);
                 }
             }
+            @media (min-width: ${breakpoints.tablet}) {
+                display: inline-block;
+            }
         }
     }
 
+`
+
+export const HeadingUser = styled(Heading4)`
+    color: white;
+    text-align: right;
+    @media (min-width: ${breakpoints.tablet}) {
+        color: ${color2};
+        text-align: left;
+    }
+`
+
+export const UserName = styled(Strong)`
+    color: ${color2};
+    @media (min-width: ${breakpoints.tablet}) {
+        color: ${primaryColor}
+    }
 `
 
 export const LogoText = styled(Text1)`
