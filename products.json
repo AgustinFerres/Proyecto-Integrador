@@ -6,7 +6,7 @@
         "title":"Prius",
         "location": "Montevideo",
         "description":"El Toyota Prius (トヨタ·プリウス Toyota Puriusu) es un automóvil híbrido gasolina-eléctrico del segmento C producido por el fabricante de automóviles japonés Toyota que se ha convertido en el más visible representante de los vehículos híbridos.",
-        "rating": 3.7,
+        "rating": 4.6,
         "liked": false
     },
     {
@@ -16,7 +16,69 @@
         "title":"Kwid",
         "location": "Montevideo",
         "description":"El Renault Kwid es un automóvil de turismo del segmento A, producido por el fabricante francés Renault en alianza con Nissan tanto en su planta de Chennai, India como en la de São José dos Pinhais, Brasil. Lanzado como prototipo en el salón del automóvil de Nueva Delhi en 2014 y anunciándose para su producción en mayo de 2015.",
-        "rating": 4.2,
+        "rating": 4.1,
+        "liked": false
+    },
+    {
+        "id": 3,
+        "img":"https://nordot-res.cloudinary.com/c_limit,w_800,f_auto,q_auto:eco/ch/images/835498424411684864/origin_1.jpg",
+        "category": "Toyota",
+        "title":"C+Pod",
+        "location": "Montevideo",
+        "description":"El Toyota C+Pod es un automóvil eléctrico de dos asientos producido por el fabricante de automóviles japonés Toyota.",
+        "rating": 3.6,
+        "liked": false
+    },
+    {
+        "id": 4,
+        "img":"https://imagenes.montevideo.com.uy/imgnoticias/202109/_W933_80/773930.jpg",
+        "category": "Renault",
+        "title":"Zoe",
+        "location": "Montevideo",
+        "description":"El Renault ZOE es un automóvil eléctrico producido por el fabricante francés Renault. Tiene un motor de 65 kW (88 CV) y 220 N·m. La batería es de iones de litio y tiene una capacidad de 22 kWh, 41 kWh y 50 kWh, alcanzando una autonomía real de hasta unos 390 km en homologación WLTP, dependiendo de la capacidad de la batería. Se presenta en tres versiones Life, Intense y Zen.",
+        "rating": 4.4,
+        "liked": false
+    },
+    {
+        "id": 5,
+        "img":"https://cdcssl.ibsrv.net/autodata/images/?IMG=USD10MBS711A01300.JPG&WIDTH=736",
+        "category": "Mercedes Benz",
+        "title":"GLA 2023",
+        "location": "Montevideo",
+        "description":"El Mercedes-Benz Clase GLA (X156) es un crossover SUV prémium del segmento C que el fabricante alemán Mercedes-Benz produce desde el año 2013. Es un cinco plazas con carrocería de cinco puertas y motor delantero transversal, disponible con tracción delantera y a las cuatro ruedas.",
+        "rating": 4.1,
+        "liked": false
+    },
+    {
+        "id": 6,
+        "img":"https://4.bp.blogspot.com/-HAp6oaZEdoY/W64rz4OBGXI/AAAAAAACz0Q/ZxbrIjL7eE02-rgfIJQWN44WacJfRnWfwCLcBGAs/s1600/lanzamiento-mitubishi-eclipse-cross-autoblog-uruguay-precios-0km-2018-2019%2B%25284%2529.jpg",
+        "category": "Mitsubishi",
+        "title":"Eclipse Cross",
+        "location": "Montevideo",
+        "description":"El Mitsubishi Eclipse Cross es un SUV crossover compacto producido por el fabricante de automóviles japonés Mitsubishi Motors desde octubre de 2017.",
+        "rating": 4.7,
+        "liked": false
+    },
+    {
+        "id": 7,
+        "img":"https://www.mercedes-benz.com.co/mercedes/site/artic/20200916/imag/foto_0000002320200916132117/680x600-min.jpg",
+        "category": "Mercedes Benz",
+        "title":"Hatchback Clase A",
+        "location": "Montevideo",
+        "description":"El Mercedes-Benz Clase A es un automóvil premium del segmento C (en anteriores generaciones fue un monovolumen del segmento B) producido por el fabricante alemán Mercedes-Benz desde el año 1997. El Clase A tiene su motor en posición delantera transversal, algo también inusual en los modelos de Mercedes-Benz. El Clase A es el modelo de entrada a la marca.",
+        "rating": 4.8,
+        "liked": false
+    },
+    {
+        "id": 8,
+        "img":"https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/2008_Mitsubishi_Triton_%28ML%29_GLS_Fastback_4-door_utility_04.jpg/1200px-2008_Mitsubishi_Triton_%28ML%29_GLS_Fastback_4-door_utility_04.jpg",
+        "category": "Mitsubishi",
+        "title":"L200 Triton 2008",
+        "location": "Montevideo",
+        "description":"La Mitsubishi L200 también conocida como Mighty Max, Forte, Triton, Sportero, Strada, Work, Katana o Dakkar es una camioneta compacta producida por Mitsubishi Motors.",
+        "rating": 3.2,
         "liked": false
     }
+
+    
 ]
