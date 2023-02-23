@@ -1487,7 +1487,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     font-weight: bold;
 `,Wk=[{src:"/img/social/facebook.svg",key:"facebook",alt:"facebook logo",path:"https://www.facebook.com",target:"_blank",icon:"fab fa-facebook"},{src:"/img/social/linkedin.svg",key:"linkedin",alt:"linkedin logo",path:"https:/www.linkedin.com",target:"_blank",icon:"fab fa-linkedin"},{src:"/img/social/twitter.svg",key:"twitter",alt:"twitter logo",path:"https:/www.twitter.com",target:"_blank",icon:"fab fa-twitter"},{src:"/img/social/instagram.svg",key:"instagram",alt:"instagram logo",path:"https:/www.instagram.com",target:"_blank",icon:"fab fa-instagram"}],b9=()=>ae(y9,{children:[T(w9,{color:"white",children:"©2021 Digital Booking"}),T(g9,{children:Wk.map(e=>T(Vk,{target:e.target,href:e.path,children:T(Bt,{fontSize:"24px",icon:e.icon})},e.key))})]}),Hy=[{type:"hidden",key:"home",label:"Home",path:"/",element:T(s9,{})},{type:"route",key:"register",label:"Crear cuenta",path:"/register",element:T(v9,{})},{type:"route",key:"login",label:"Iniciar sesión",path:"/login",element:T(d9,{})},{type:"hidden",key:"notfound",label:"",path:"*",element:T("div",{children:"Not found"})}],S9=z.img`
     height: 50px;
-`,x9="/logo.svg",O9=()=>T(S9,{src:x9}),k9=z.header`
+`,x9="https://i.ibb.co/Wx7dJqY/logo-1-2.png",O9=()=>T(S9,{src:x9}),k9=z.header`
     background-color: white;
     padding: 20px;
     display: flex;
