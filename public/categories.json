@@ -10,5 +10,17 @@
         "title": "Renault",
         "description": "5.230 autos",
         "img": "https://cdn.motor1.com/images/mgl/Y1B1q/s1/adios-al-kwid-por-restricciones-a-las-importaciones-renault-deja-de-vender-su-auto-mas-barato-en-argentina.webp"
+    },
+    {
+        "id": 3,
+        "title": "Mitsubishi",
+        "description": "9.312 autos",
+        "img": "https://www.mitsubishi-motors.com.uy/Images/PageImages/Slider/new-l200-renace-la-leyenda-mobile.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Mercedes Benz",
+        "description": "2.402 autos",
+        "img": "https://motor.elpais.com/wp-content/uploads/2022/09/2023-Mercedes-AMG-C-63-S-E-PERFORMANCE-00001.jpg"
     }
 ]

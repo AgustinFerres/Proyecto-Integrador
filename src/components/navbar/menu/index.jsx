@@ -8,7 +8,10 @@ import MenuBody from './MenuBody';
 const Menu = () => {
 
     const [expanded, setExpanded] = useState(false);
-    const handleExpanded = (value) => setExpanded(value)
+    const handleExpanded = (value) => {
+        document.body.classList.toggle('no-scroll')
+        setExpanded(value)
+    }
 
     return (
         <>

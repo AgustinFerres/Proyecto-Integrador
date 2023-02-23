@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1,
+        "name": "Uruguay",
+        "cities": [
+            "Montevideo",
+            "Punta del Este"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Argentina",
+        "cities": [
+            "Buenos Aires",
+            "Mendoza",
+            "Córdoba"
+        ]
+    }
+]

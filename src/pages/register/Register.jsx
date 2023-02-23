@@ -27,8 +27,7 @@ const handleSubmit = e => {
 
   checkPassword('password', e.target[3].value, e.target[4].value)
   }
-  console.log(errors);
-  setUpdate(prev => prev + 1)
+  setUpdate(prev => prev + 1);
 } 
 
   return (

@@ -45,3 +45,17 @@ export const checkPassword = (key, value1, value2) => {
     }
 
 }
+
+export const checkUser = (value1, value2) => {
+    if (value1 !== 'prueba@gmail.com' || value2 !== '123456') {
+        errors['user'] = {
+            message: 'Email y/o contraseña invalidos'
+        }
+        return false;
+    }
+    else {
+        delete errors['user'];
+
+        return true;
+    }
+}

@@ -173,7 +173,7 @@ export const InputContainer = styled.div`
     & > input {
         margin-top: 10px;
         border: ${({wrong}) => wrong ? '1px solid red' : 'none'};
-        background-color: ${({wrong}) => wrong ? 'rgba(255,0,0,0.15)' : 'none'};
+        background-color: ${({wrong}) => wrong ? 'rgba(255,225,225,1)' : 'none'};
         width: 100%;
         -webkit-appearance: none;
         box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
@@ -221,8 +221,17 @@ export const SubmitContainer = styled.div`
     width: 100%;  
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin-top: 20px;
+
+    & > h4 {
+        align-self: center;
+    }
+    @media (min-width: ${breakpoints.desktop}) {
+        & > button {
+            width: 250px;
+            align-self: center;
+        }
+    }
 
 `
 export const Card = styled.article`
@@ -250,3 +259,9 @@ export const HomeSection = styled.section`
 `
 
 
+export const InputError = styled(Text2)`
+    color: red;
+    margin-top: 5px;
+    font-weight: bold;
+    text-align: right;
+`

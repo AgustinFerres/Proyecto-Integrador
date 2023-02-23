@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react'
-import { Input, InputContainer } from './commonStyles'
+import { Input, InputContainer, InputError } from './commonStyles'
 
 const InputValidated = ({label, type, wrong, className}) => {
 
@@ -15,13 +15,9 @@ const InputValidated = ({label, type, wrong, className}) => {
             <label>{label}</label>
             <Input type={type === 'password' ? tipo : type}/>
             {label === 'Contraseña' && <FontAwesomeIcon icon={tipo === 'password' ? 'fa-regular fa-eye' : 'fa-regular fa-eye-slash'} type='button' onClick={handleViewPassword}/>}
-            {wrong && <p style={{
-                textAlign: 'right',
-                fontWeight: 'bold',
-                color: 'red'
-            }}>
+            {wrong && <InputError>
                 {wrong.message}
-            </p>}
+            </InputError>}
             
         </InputContainer>
     )

@@ -6,13 +6,17 @@ const customStyles = {
       ...base,
       border: 0,
       height: '40px',
-      boxShadow: "none"
+      boxShadow: "red",
     })
   };
 
 const SearchSelect = ({ options, className }) => {
     return (
-        <Select className={className} options={options} styles={customStyles} />
+        <Select 
+        className={className}
+        options={options}
+        styles={customStyles}
+        />
     );
 }
 
