@@ -16,7 +16,7 @@ const Login = () => {
     if (checkUser(e.target[0].value, e.target[1].value)){
 
       localStorage.setItem('user', 'Brian Rodríguez')
-      location.replace('/')
+      location.replace('/Proyecto-Integrador/')
     }
     setUpdate(prev => prev + 1);
   }
